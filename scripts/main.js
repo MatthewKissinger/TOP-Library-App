@@ -47,6 +47,16 @@ Book.prototype.addToLibrary = function() {
     myLibrary.push(this);
 }
 
+// Object literals so that the project boots with rendered cards
+if (myLibrary.length === 0) {
+    let book1 = new Book('Dune', 'Frank Herbert', 412, 'Science Fiction', true);
+    book1.addToLibrary();
+
+    let book2 = new Book('Chesapeake', 'James A. Michener', 865, 'Historical', false);
+    book2.addToLibrary();
+}
+
+
 // rendering with forEach() -- avoids property of undefined errors
 function renderLibrary(array) {
     libraryArea.innerHTML = '';
