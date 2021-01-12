@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2>Digital Bookshelf</h2>
+    </header>
+    
+    <div class="library-container"></div>
+
+    <div class="form-container hide">
+        
+        <i class="cancel-button fas fa-window-close"></i>
+        <h3 class="form-element">Add a new Book to the Library</h3>
+        <label>Title</label>
+        <input type="text" id="form-title" class="form-element">
+        <label>Author</label>
+        <input type="text" id="form-author" class="form-element">
+        <label>Pages</label>
+        <input type="text" id="form-pages" class="form-element">
+        <label>Genre</label>
+        <input type="text" id="form-genre" class="form-element">
+        <label>Read?</label>
+        <input type="checkbox" id="form-read">
+        <button id="submit-button" class="form-element">SUBMIT</button>
+
+    </div>
+
+    <div class="new-book-button shadow">
+        <div class="new-book-tooltip">
+            <h5>Add a book</h5>
+        </div>
+        <i class="fas fa-plus"></i>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
